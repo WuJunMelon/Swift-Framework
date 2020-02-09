@@ -55,6 +55,12 @@ class HomeVC: BaseTableViewVC {
         return "HomeVC"
     }
     
+    //演示pull代码再本地后的冲突和解决冲突
+    //本地修改的代码
+    func test() -> () {
+        
+    }
+    
     override func handleRequestWithURLSuccess(url: String) {
         print("handleRequestWithURLSuccess",self.requestWithURLDic)
         if url == urlStr {
