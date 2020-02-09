@@ -24,6 +24,11 @@ class HomeVC: BaseTableViewVC {
     
     
     
+    
+    
+    
+    
+    
     var homeView:HomeView!
     
     override func viewDidLoad() {
