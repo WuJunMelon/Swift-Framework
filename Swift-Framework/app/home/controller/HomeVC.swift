@@ -54,6 +54,10 @@ class HomeVC: BaseTableViewVC {
     override func getVCName() -> (String) {
         return "HomeVC"
     }
+    //修改远程的代码演示冲突
+    //远程修改的代码
+    func testRemote(){
+    }
     
     override func handleRequestWithURLSuccess(url: String) {
         print("handleRequestWithURLSuccess",self.requestWithURLDic)
