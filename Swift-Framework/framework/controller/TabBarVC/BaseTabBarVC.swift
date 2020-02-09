@@ -19,6 +19,8 @@ class BaseTabBarVC: UITabBarController {
     }
     
     
+    
+    
     private func setChildViewController(_ childController: UIViewController, title: String, imageName: String) {
         //设置 tabbar 文字和图片
         childController.title = title
