@@ -54,6 +54,10 @@ class HomeVC: BaseTableViewVC {
     override func getVCName() -> (String) {
         return "HomeVC"
     }
+    //修改远程的代码演示冲突
+    //远程修改的代码
+    func testRemote(){
+    }
     
     //演示pull代码再本地后的冲突和解决冲突
     //本地修改的代码
