@@ -14,7 +14,6 @@ enum Request {
     case POST
     case DOWNLOAD
     case UPLOAD
-
 }
 
 class BaseVC: CoreVC {
@@ -143,20 +142,6 @@ extension BaseVC{
     
     private func requestWithURLWithLoadingText(url:String,pamDic:Dictionary<String,Any>,loadingText:String){
         //网络请求
-        /*
-         get
-         let urlStr = "http://onapp.yahibo.top/public/?s=api/test/list"
-         Alamofire.request(urlStr).responseJSON { (response) in
-             switch response.result {
-             case .success(let json):
-                 print(json)
-                 break
-             case .failure(let error):
-                 print("error:\(error)")
-                 break
-             }
-         }
-         */
         //post
         Alamofire.request(url, method: .post, parameters: pamDic).responseJSON { (response) in
             switch response.result {

@@ -13,7 +13,7 @@ DEPENDENCIES:
   - SnapKit (~> 4.0.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - FMDB
     - Kingfisher
@@ -25,6 +25,6 @@ SPEC CHECKSUMS:
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: a6f2622ff8e08f93a26929237dbc218d12f88871
+PODFILE CHECKSUM: 58e9a48b1ae3883ab006ae1dccedcee30fb7a80e
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

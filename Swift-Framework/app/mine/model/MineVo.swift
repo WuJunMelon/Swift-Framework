@@ -9,5 +9,12 @@
 import UIKit
 
 class MineVo: BaseTableViewVo {
-
+    
+    func initByDic(dic:Dictionary<String,Any>) -> Self! {
+//        self.homeService = HomeService()
+//        self.cellVoArray = self.homeService.getInfoArray(dic: dic)
+//        reloadDataArray()
+        return self
+    }
+    
 }
