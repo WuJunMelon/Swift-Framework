@@ -33,7 +33,8 @@ class HomeVC: BaseTableViewVC {
         self.homeView = HomeView.init(frame: CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT))
         super.initBaseView(baseTableView: self.homeView)
         self.pamDic = ["name":"hibo","password":"123456"]
-        self.requestWithURL(url: urlStr, pamDic: self.pamDic , loadingText: "loading...")
+        self.requestWithURL(url: urlStr, pamDic: self.pamDic, loadingText: "loading...", request: Request.POST)
+//        self.requestWithURL(url: "", pamDic: self.pamDic, loadingText: "", request: Request.GET)
     }
     override func initService() {
         self.homeService = HomeService()
@@ -54,17 +55,6 @@ class HomeVC: BaseTableViewVC {
     override func getVCName() -> (String) {
         return "HomeVC"
     }
-    //修改远程的代码演示冲突
-    //远程修改的代码
-    func testRemote(){
-    }
-    
-    //演示pull代码再本地后的冲突和解决冲突
-    //本地修改的代码
-    func test() -> () {
-        
-    }
-    
     override func handleRequestWithURLSuccess(url: String) {
         print("handleRequestWithURLSuccess",self.requestWithURLDic)
         if url == urlStr {
