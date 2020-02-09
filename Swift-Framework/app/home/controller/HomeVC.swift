@@ -22,8 +22,6 @@ class HomeVC: BaseTableViewVC {
         return service
     }()
     
-    
-    
     var homeView:HomeView!
     
     override func viewDidLoad() {
